@@ -8,6 +8,7 @@ const client = new Discord.Client({
 });
 const fs = require("fs");
 const prefix = 'g?';
+const token = require('./config.json');
 client.commands = new Discord.Collection
 const commands = fs.readdirSync("./commands").filter(file => file.endsWith(".js"))
 for(file of commands) {
